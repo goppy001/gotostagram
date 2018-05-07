@@ -68,15 +68,28 @@ p {
 }
 
 /* icon */
-.glyphicon {
+.glyphicon-user {
   font-size:25px;
   margin-top:-1em;
+  margin-right:60px;
   float:right;
   color:#000000;
   &:hover {
   color: #999999;
  }
 }
+
+.glyphicon-cog {
+  font-size:25px;
+  margin-top:-1em;
+  margin-right:10px;
+  float:right;
+  color:#000000;
+  &:hover {
+    color: #999999;
+  }
+}
+
 
 /* navigation bar */
 .navbar-default {
