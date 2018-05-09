@@ -1,19 +1,23 @@
 <header class="navbar navbar-fixed-top navbar-default ">
   <div class="container">
-    <%= link_to image_tag("gotostagram_main.png", alt:"Gotostagram"), root_path, id: "logo" %>
+      <%= link_to "Gotostagram", current_user, id: "logo" %>
     <form class="form-inline" >
       <input class="form-control" type="search" placeholder="検索..." aria-label="検索...">
     </form>
       <ul style="list-style:none;">
         <% if logged_in? %>
-        <li><%= link_to current_user do %>
+          <li><%= link_to post_path do %>
+            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+          <% end %>
+          </li>
+          <li><%= link_to current_user do %>
             <span class="glyphicon glyphicon-user" aria-hidden="true"></span> 
           <% end %>
-        </li>
-        <li><%= link_to edit_user_path(current_user) do %>
-           <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-         <% end %>
-         </li>
+          </li>
+           <li><%= link_to edit_user_path(current_user) do %>
+             <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+          <% end %>
+           </li>
         <% else %>
           <li><%= link_to "ログイン", login_path %></li>
         <% end %>

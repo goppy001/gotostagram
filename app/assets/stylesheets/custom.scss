@@ -1,9 +1,11 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+
 /* mixins, variables, etc. */
 
-$gray-medium-light: #eaeaea;
+$gray-medium-light: #fafafa;
 
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
@@ -15,6 +17,7 @@ $gray-medium-light: #eaeaea;
 
 body {
   padding-top: 100px;
+  background-color: #fafafa !important;
 }
 
 section {
@@ -60,17 +63,12 @@ p {
   line-height: 1.7em;
 }
 
-/* header */
-
-.form-inline {
-  text-align:center;
-  margin-top:2em;
-}
+/*header*/
 
 /* icon */
 .glyphicon-user {
   font-size:25px;
-  margin-top:-1em;
+  margin-top:-1.5em;
   margin-right:60px;
   float:right;
   color:#000000;
@@ -81,8 +79,19 @@ p {
 
 .glyphicon-cog {
   font-size:25px;
-  margin-top:-1em;
+  margin-top:-1.5em;
   margin-right:10px;
+  float:right;
+  color:#000000;
+  &:hover {
+    color: #999999;
+  }
+}
+
+.glyphicon-plus {
+  font-size: 25px;
+  margin-top:-1.5em;
+  margin-right:110px;
   float:right;
   color:#000000;
   &:hover {
@@ -93,20 +102,54 @@ p {
 
 /* navigation bar */
 .navbar-default {
-  border-color:#e8e8e8;
-  min-height: 50px;
-  max-height: 80px;
+  background-color:#ffffff !important;
+  border-bottom-width:1px !important;
+  border-bottom-style: solid !important;
+  border-bottom-color:rgba(0,0,0, 0.098) !important;
+  min-height: 77px;
+  max-height: 77px;
+}
+
+/*serch console*/
+.form-inline {
+  background-color:#ffffff;
+  vertical-align:middle;
+  margin-top:1em;
+  border-radius:3px;
+  color:#262626;
+  font-size:14px;
+  outline:0;
+  z-index:1;
+  text-align:center;
+  padding: 4px 10px 3px 26px;
+}
+.form-control {
+  text-align:center;
+}
+
+.form-control_login {
+  text-align:left;
+  height:30px !important;
 }
 
 
 #logo {
+  font-family:'billabong';
+  font-size:35px;
+  color:#000000;
   float: left;
-  margin-right: 10px;
+  margin-right: 5px;
+  padding-top:10px;
+}
+
+#top_logo {
+  font-family: 'billabong';
+  font-size:4em;
+  color: #000000;
+  float:left;
+  text-align:center;
+  margin-right:10px;
   margin-top:1em;
-  &:hover {
-    color: white;
-    text-decoration: none;
-  }
 }
 
 /* footer */
@@ -220,4 +263,55 @@ input {
 #session_remember_me {
   width:auto;
   margin-left:0;
+}
+
+/* microposts */
+
+.microposts {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+  .user {
+    margin-top: 5em;
+    padding-top: 0;
+  }
+  .content {
+    display: block;
+    margin-left: 60px;
+    img {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+  .timestamp {
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
+  }
+  .gravatar {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+}
+
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+span.picture {
+  margin-top: 10px;
+  input {
+    border: 0;
+  }
+}
+
+.signup_message {
+  font-size:12px;
 }

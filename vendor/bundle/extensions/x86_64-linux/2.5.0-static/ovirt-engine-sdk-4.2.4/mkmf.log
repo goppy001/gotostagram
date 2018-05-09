@@ -1,0 +1,9 @@
+find_executable: checking for xml2-config... -------------------- yes
+
+/home/glodia/.rbenv/versions/2.5.0/lib/ruby/2.5.0/mkmf.rb:1553: warning: Insecure world writable dir /home in PATH, mode 040777
+--------------------
+
+find_executable: checking for curl-config... -------------------- yes
+
+--------------------
+

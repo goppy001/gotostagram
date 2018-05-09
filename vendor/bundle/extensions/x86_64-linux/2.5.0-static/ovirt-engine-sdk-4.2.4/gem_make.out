@@ -1,0 +1,53 @@
+current directory: /home/glodia/gotostagram/vendor/bundle/gems/ovirt-engine-sdk-4.2.4/ext/ovirtsdk4c
+/home/glodia/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20180508-24774-jvpgay.rb extconf.rb
+checking for xml2-config... yes
+checking for curl-config... yes
+creating Makefile
+
+current directory: /home/glodia/gotostagram/vendor/bundle/gems/ovirt-engine-sdk-4.2.4/ext/ovirtsdk4c
+make "DESTDIR=" clean
+
+current directory: /home/glodia/gotostagram/vendor/bundle/gems/ovirt-engine-sdk-4.2.4/ext/ovirtsdk4c
+make "DESTDIR="
+compiling ov_error.c
+compiling ov_http_client.c
+ov_http_client.c: 関数 ‘ov_http_client_header_task’ 内:
+ov_http_client.c:392:33: 警告: 符号付きと符号無しの整数式の間での比較です [-Wsign-compare]
+         while (pointer - buffer < length && isspace(*pointer)) {
+                                 ^
+ov_http_client.c: 関数 ‘ov_http_client_send’ 内:
+ov_http_client.c:1092:34: 警告: 符号付きと符号無しの整数式の間での比較です [-Wsign-compare]
+     if (RHASH_SIZE(ptr->pending) < ptr->limit) {
+                                  ^
+ov_http_client.c: 関数 ‘ov_http_client_wait’ 内:
+ov_http_client.c:1118:71: 警告: 符号付きと符号無しの整数式の間での比較です [-Wsign-compare]
+         while (RARRAY_LEN(ptr->queue) > 0 && RHASH_SIZE(ptr->pending) < ptr->limit) {
+                                                                       ^
+ov_http_client.c: トップレベル:
+cc1: 警告: 認識できないコマンドラインオプション "-Wno-self-assign" です [デフォルトで有効]
+cc1: 警告: 認識できないコマンドラインオプション "-Wno-constant-logical-operand" です [デフォルトで有効]
+cc1: 警告: 認識できないコマンドラインオプション "-Wno-parentheses-equality" です [デフォルトで有効]
+cc1: 警告: 認識できないコマンドラインオプション "-Wno-tautological-compare" です [デフォルトで有効]
+compiling ov_http_request.c
+compiling ov_http_response.c
+compiling ov_http_transfer.c
+compiling ov_module.c
+compiling ov_string.c
+compiling ov_xml_reader.c
+compiling ov_xml_writer.c
+ov_xml_writer.c: 関数 ‘ov_xml_writer_string’ 内:
+ov_xml_writer.c:184:5: 警告: 初期化でポインタからキャスト無しに整数を作成しています [デフォルトで有効]
+     return rb_funcall(ptr->io, STRING_ID, 0, NULL);
+     ^
+ov_xml_writer.c:184:5: 警告: (‘rb_funcall_args[0]’ 用の初期化付近) [デフォルトで有効]
+ov_xml_writer.c: トップレベル:
+cc1: 警告: 認識できないコマンドラインオプション "-Wno-self-assign" です [デフォルトで有効]
+cc1: 警告: 認識できないコマンドラインオプション "-Wno-constant-logical-operand" です [デフォルトで有効]
+cc1: 警告: 認識できないコマンドラインオプション "-Wno-parentheses-equality" です [デフォルトで有効]
+cc1: 警告: 認識できないコマンドラインオプション "-Wno-tautological-compare" です [デフォルトで有効]
+compiling ovirtsdk4c.c
+linking shared-object ovirtsdk4c.so
+
+current directory: /home/glodia/gotostagram/vendor/bundle/gems/ovirt-engine-sdk-4.2.4/ext/ovirtsdk4c
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 ovirtsdk4c.so ./.gem.20180508-24774-qtudhj
