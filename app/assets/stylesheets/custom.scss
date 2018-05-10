@@ -140,6 +140,9 @@ p {
   float: left;
   margin-right: 5px;
   padding-top:10px;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 #top_logo {
@@ -213,6 +216,60 @@ aside {
 
 .gravatar_edit {
   margin-top: 15px;
+}
+
+.fllw {
+  overflow:auto;
+  a {
+    float: auto;
+    color: black;
+    &:hover {
+      text-decoration: none;
+      color: blue;
+    }
+  }
+}
+
+.post_count {
+  overflow:auto;
+  color: black;
+}
+
+.stats {
+  overflow: auto;
+  margin-top: 0;
+  padding: 0;
+  a {
+    float: left;
+    padding: 0 10px;
+    color: gray;
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color: blue;
+    }
+  }
+  strong {
+    display: block;
+  }
+}
+
+.user_avatars {
+  overflow: auto;
+  margin-top: 10px;
+  .gravatar {
+    margin: 1px 1px;
+  }
+  a {
+    padding: 0;
+  }
+}
+
+.users.follow {
+  padding: 0;
 }
 
 /* forms */
@@ -314,4 +371,16 @@ span.picture {
 
 .signup_message {
   font-size:12px;
+}
+
+/* Users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
 }
