@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+  layout nil
   def new
     render :layout => nil
   end
@@ -10,14 +11,14 @@ class SessionsController < ApplicationController
       params[:session][:remember_me] == '1' ? remember(user) :forget(user)
       redirect_back_or user
     else
-      flash.now[:danger] = 'メールアドレスまたはパスワードが違います' 
+      flash.now[:danger] = 'メールアドレスまたはパスワードが違います'
       render 'new'
     end
   end
 
   def destroy
     log_out if logged_in?
-    redirect_to root_url
+    redirect_to login_url
   end
 
 end

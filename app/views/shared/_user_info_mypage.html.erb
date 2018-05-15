@@ -1,0 +1,23 @@
+  <div class="block1">
+    <%= link_to gravatar_for(current_user, size: 100), current_user %>
+    <div class="block2">
+       <div class="name">
+         <%= current_user.name %>
+       </div>
+       <div class="edit">
+         <%= link_to "プロフィールを編集", edit_user_path(current_user), class: "btn btn-default" %>
+       </div>
+       <div class="status">
+         <%= link_to status_path do %>
+         <span class="glyphicon glyphicon-cog" aria-hidden="true" remote: true></span>
+       <% end %>
+       </div>
+      <div class="fllw">
+        <%= render 'shared/user_info_default' %>
+        <span style="margin-right:15px;"></span>
+        <%= render 'shared/stats_default' %>
+      </div>
+    </div>
+  </div>
+
+

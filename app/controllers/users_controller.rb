@@ -5,12 +5,18 @@ class UsersController < ApplicationController
   before_action :admin_user,     only: :destroy
 
   def index
-    @users = User.all
+    if logged_in?
+      @microposts = current_user.microposts.page(params[:page])
+      @feed_items = current_user.feed.page(params[:page])
+    else
+      redirect_to login_url
+    end
   end
 
   def show
     @user = User.find(params[:id])
     @microposts = @user.microposts.page(params[:page])
+    @feed_items = current_user.feed.page(params[:page])
   end
 
   def new
@@ -30,6 +36,10 @@ class UsersController < ApplicationController
 
   def edit
     @user = User.find(params[:id])
+  end
+
+  def status
+  
   end
 
   def update

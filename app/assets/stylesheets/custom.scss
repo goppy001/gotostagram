@@ -1,8 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-
-
 /* mixins, variables, etc. */
 
 $gray-medium-light: #fafafa;
@@ -75,17 +73,6 @@ p {
   &:hover {
   color: #999999;
  }
-}
-
-.glyphicon-cog {
-  font-size:25px;
-  margin-top:-1.5em;
-  margin-right:10px;
-  float:right;
-  color:#000000;
-  &:hover {
-    color: #999999;
-  }
 }
 
 .glyphicon-plus {
@@ -209,6 +196,74 @@ aside {
   }
 }
 
+.block1 {
+  margin-left:150px;
+  height:auto;
+   .block2 {
+     height:auto;
+     margin-left:200px;
+     .name {
+       margin-left:2em;
+       float:left;
+       font-size:30px;
+       height:30px;
+      }
+     .edit {
+       float:left;
+       font-size:15px;
+       margin-left:2.0em;
+       margin-top:0.3em;
+       height:30px;
+       &:hover {
+          text-decoration: none;
+        }
+      }
+      .glyphicon-cog {
+        font-size:25px;
+        float:left;
+        margin-left:0.5em;
+        margin-top:0.3em;
+        height:30px;
+        color:#000000;
+        &:hover {
+          color:#999999;
+        }
+      }
+      .fllw {
+       clear:both;
+       position:relative;
+       top:-40px;
+       left:3em;
+       color: black;
+       font-size:18px;
+       a {
+         color:black;
+         &:hover {
+           text-decoration: none;
+           color: blue;
+         }
+       }
+      } 
+    }
+  }
+
+/*top_page*/
+  .top1 {
+    width:100%;
+    float:left;
+    margin-left:2em;
+    border-bottom:solid;
+    border-color:#EFEFEF;
+    border-width:1px;
+    .name_top {
+      float:left;
+      margin-left:10px;
+      font-size:15px;
+      font-weight:600;
+    }
+  }
+
+
 .gravatar {
   float: left;
   margin-right: 10px;
@@ -216,18 +271,6 @@ aside {
 
 .gravatar_edit {
   margin-top: 15px;
-}
-
-.fllw {
-  overflow:auto;
-  a {
-    float: auto;
-    color: black;
-    &:hover {
-      text-decoration: none;
-      color: blue;
-    }
-  }
 }
 
 .post_count {
@@ -329,6 +372,104 @@ input {
   padding: 0;
   li {
     padding: 10px 0;
+  }
+  .user_profile {
+    background-color:#ffffff;
+    height:60px;
+    width:614px;
+    border:solid 1px #EFEFEF;
+    padding-top:15px;
+    padding-left:20px;
+    .user {
+      padding-top:20px;
+      color:black;
+      font-size:15px;
+      &:hover {
+        color:blue;
+        text-decoration: none;
+      }
+    }
+  }
+  .picture {
+    background-color:#ffffff;
+    display:flex;
+    align-items:top;
+    border-top:solid 1px #EFEFEF;
+    border-left:solid 1px #EFEFEF;
+    border-right:solid 1px #EFEFEF;
+    height:614px;
+    width:614px;
+  }
+  .favorite {
+    background-color:#ffffff;
+    display:flex;
+    align-items:center;
+    height:auto;
+    width:614px;
+    border-left:solid 1px #EFEFEF;
+    border-right:solid 1px #EFEFEF;
+    .favorite_icon {
+      height:30px;
+      float:left;
+      width:100%;
+      .button {
+        background:transparent;
+        border:none;
+        cursor: pointer;
+        outline: none;
+      }
+      .glyphicon-heart {
+        padding-left:15px;
+        font-size:25px;
+        color:red;
+       }
+      .glyphicon-heart-empty {
+        padding-left:15px;
+        font-size:25px;
+        color:#262626;
+       }
+     }
+   }
+    .favorite_count {
+      float:left;
+      height:30px;
+      width:614px;
+      color:#262626;
+      font-weight:600;
+      background-color:#FFFFFF;
+      border-left:solid 1px #EFEFEF;
+      border-right:solid 1px #EFEFEF;
+      padding-left:20px;
+     }
+  .content {
+    background-color:#ffffff;
+    display:flex;
+    border-bottom:solid 1px #EFEFEF;
+    border-left:solid 1px #EFEFEF;
+    border-right:solid 1px #EFEFEF;
+    height:155px;
+    width:614px;
+  }
+  .timestamp {
+    color: $gray-light;
+    position:relative;
+    top:-30px;
+    left:20px;
+    display: flex;
+    font-size:10px;
+  }
+  .delete_link {
+    position:relative;
+    left:550px;
+    top:-50px;
+  }
+}
+
+.feeds {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 10px 0;
     border-top: 1px solid #e8e8e8;
   }
   .user {
@@ -384,3 +525,30 @@ span.picture {
     border-bottom: 1px solid $gray-lighter;
   }
 }
+
+/* modal_window */
+.modal_window {
+  border:solid 1px #DBDBDB;
+  list-style:none;
+  width:510px;
+  text-align:center;
+  .modal_list {
+    border:solid 0.5px #DBDBDB;
+    width:510px;
+    height:51px;
+    padding-top:14px;
+    &:hover {
+      background-color:#EFEFEF;
+    }
+    .modal_text {
+      color:#262626;
+      font-size:16px;
+      font-weight:400;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+

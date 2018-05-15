@@ -1,8 +1,42 @@
-<% provide(:title "All users') %>
-<h1>全ユーザー</h1>
+<% provide(:title, @user.name) %>
+<div class="row">
+  <aside class="col-md-6">
+    <section class="user_info">
+      <h1>
+        <%= gravatar_for @user %>
+        <p><%= @user.name %></p>
+        </h1>
+        <% if current_user?(@user) %>
+          <%= link_to "プロフィールを編集", edit_user_path(current_user) %>
+        <% else %>
+          <%= render 'follow_form' %>
+        <% end %>
+      </section>
+      <table>
+      <tr>
+       <th align="center"><%= render 'shared/user_info_default' %></th>
+       <th align="center"><%= render 'shared/stats_default' %></th>
+      </tr>
+      </table>
+  </aside>
+</div>
 
-<ul class="users">
-  <% @users.each do |user| %>
-      <%= render @user %>
-  <% end %>
-</ul>
+<div class="row">
+   <div id="posted_contents">
+     <div class="col-md-8">
+         <%= render @microposts %>
+    </div>
+  </div>
+</div>
+
+  <script>
+    $("#posted_contents .microposts").infinitescroll({
+      loading: {
+      img:     "http://www.mytreedb.com/uploads/mytreedb/loader/ajax_loader_blue_48.gif",
+      msgText: "loading..."
+    },
+    navSelector: "nav.pagination",
+    nextSelector: "nav.pagination a[rel=next]",
+    itemSelector: "#posted_contents .microposts" /* このDOMに差し掛かった時に、次のページのロードが始まる*/
+});
+  </script>

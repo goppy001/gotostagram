@@ -1,0 +1,18 @@
+  <div class="block1">
+    <%= link_to gravatar_for(@user, size: 100), @user %>
+    <div class="block2">
+       <div class="name">
+         <%= @user.name %>
+       </div>
+        <div class="edit">
+          <%= render 'users/follow_form' %>
+        </div>
+      <div class="fllw">
+        <%= render 'shared/user_info_default' %>
+        <span style="margin-right:15px;"></span>
+        <%= render 'shared/stats_default' %>
+      </div>
+    </div>
+  </div>
+
+

@@ -10,9 +10,6 @@
   <body>
     <div class="login_all">
     <div class="container">
-      <% flash.each do |message_type, message| %>
-        <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
-      <% end %>
       <div class="col-md-1 col-md-offset-2">
           <%= image_tag("top_image.jpg", alt:"top_image") %>
     </div>
@@ -34,7 +31,7 @@
       </p>
       <p>
       </p>
-      <%= f.submit "ログイン", class: "btn btn-primary" %>
+      <%= f.submit "ログインする", class: "btn btn-primary" %>
     <% end %>
 
     <div class="signup_message">
