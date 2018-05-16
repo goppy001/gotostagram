@@ -442,38 +442,89 @@ input {
        }
      }
    }
-    .favorite_count {
-      float:left;
-      height:30px;
-      width:614px;
-      color:#262626;
-      font-weight:600;
-      background-color:#FFFFFF;
-      border-left:solid 1px #EFEFEF;
-      border-right:solid 1px #EFEFEF;
-      padding-left:20px;
-     }
+  .favorite_count {
+    float:left;
+    height:30px;
+    width:614px;
+    color:#262626;
+    font-weight:600;
+    background-color:#FFFFFF;
+    border-left:solid 1px #EFEFEF;
+    border-right:solid 1px #EFEFEF;
+    padding-left:20px;
+  }
   .content {
     background-color:#ffffff;
     display:flex;
-    border-bottom:solid 1px #EFEFEF;
     border-left:solid 1px #EFEFEF;
     border-right:solid 1px #EFEFEF;
-    height:155px;
     width:614px;
+    .cmntname {
+      padding-left:1em;
+      font-weight:600;
+      color:#262626;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    .cmnt {
+      padding-left:0.5em;
+      position:relative;
+      overflow: hidden;
+      height:40px;
+      width:70%;
+    }
+    .cmnt::before {
+      position:absolute;
+      bottom:0;
+      width:100%;
+      height:20px;
+      background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
+  background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
+      content:"";
+    }
+    .grad_btn {
+      color:#777777;
+      font-size:12px;
+      height:1px;
+      cursor:pointer;
+      position:absolute;
+      left:600px;
+    }
+    .grad_trigger {
+      display: none; /*チェックボックスは常時非表示*/
+    }
+    .grad_trigger:checked + .grad_btn {
+      display:none;
+    }
+    .grad_trigger:checked ~ .cmnt {
+      height: auto;
+    }
+    .grad_trigger:checked ~ .cmnt::before {
+      display:none;
+    }
   }
-  .timestamp {
-    color: $gray-light;
-    position:relative;
-    top:-30px;
-    left:20px;
-    display: flex;
-    font-size:10px;
-  }
-  .delete_link {
-    position:relative;
-    left:550px;
-    top:-50px;
+  .time_delete {
+    height:40px;
+    width:614px;
+    border-left:solid 1px #EFEFEF;
+    border-right:solid 1px #EFEFEF;
+    border-bottom:solid 1px #EFEFEF;
+    background-color:#FFFFFF;
+    .timestamp {
+      color: $gray-light;
+      display: flex;
+      font-size:10px;
+      padding-left:10px;
+    }
+    .delete_link {
+      text-align:right;
+      padding-right:10px;
+      color:black;
+      &:hover {
+        text-decoration:none;
+      }
+    }
   }
 }
 

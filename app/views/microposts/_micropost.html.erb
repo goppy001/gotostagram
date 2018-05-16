@@ -16,16 +16,42 @@
       <%= render 'favorites/favorite_count', micropost: micropost %>
     </div>
     <div class="content">
-      <%= micropost.content %>
+      <input id="trigger1" class="grad_trigger" type="checkbox">
+      <label class="grad_btn" for="trigger1">続きを読む</label>
+      <%= link_to "#{micropost.user.name}", micropost.user, class: "cmntname"%>      <span class="cmnt">
+        <%= micropost.content %>
+      </span>
     </div>
+    <div class="time_delete">
       <div class="timestamp">
         <%= time_ago_in_words(micropost.created_at) %>前
       </div>
-        <div class="delete_link">
+      <div class="delete_link">
         <% if current_user?(micropost.user) %>
           <%= link_to "削除", micropost, method: :delete,
-                                    data: { confirm: "削除しますか?" } %>
+            data: { confirm: "削除しますか?" }, class: "delete_link" %>
         <% end %>
-        </div>
-    </li>
+      </div>
+    </div>
+  </li>
 </div>
+
+
+  <script type="text/javascript">
+    var itemHeight = [];
+    $(function() {
+      $('.cmnt').each(function() {
+        var thisHeight = $(this).height();
+        itemsHeights.push(thisHeight);
+        $(this).addClass("is-hide");
+      });
+    });
+
+    $('#readmore').click(function() {
+      var index = $(this).index('#readmore');
+      var addHeight = itemHeights[index];
+      $(this).addClass('is-show').next().animate({height: addHeight},200).removeClass('is-hide');
+    });
+  </script>
+
+
