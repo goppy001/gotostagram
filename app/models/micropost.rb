@@ -33,12 +33,4 @@ class Micropost < ApplicationRecord
       errors.add(:picture, "5MBバイト未満の画像を選択してください")
     end
   end
-
-  #画像が選択されているかバリデーションする
-  def picture_existence
-    if picture.size == 0.bytes
-      errors.add(:picture, "画像を選択してください")
-    end
-  end
-
 end

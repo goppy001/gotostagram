@@ -111,7 +111,10 @@ p {
   padding: 4px 10px 3px 26px;
 }
 .form-control {
-  text-align:center;
+}
+
+.form-control_id {
+  height:60px !important;
 }
 
 .form-control_login {
@@ -244,6 +247,13 @@ aside {
          }
        }
       } 
+      .introduce {
+        height:50px;
+        position:relative;
+        top:-20px;
+        left:3em;
+        font-size:15px;
+      }
     }
   }
 
@@ -419,11 +429,13 @@ input {
         outline: none;
       }
       .glyphicon-heart {
+        padding-top:6px;
         padding-left:15px;
         font-size:25px;
         color:red;
        }
       .glyphicon-heart-empty {
+        padding-top:6px;
         padding-left:15px;
         font-size:25px;
         color:#262626;

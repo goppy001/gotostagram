@@ -1,19 +1,43 @@
 <%= form_for(@micropost) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <span class="picture">
-    <%= f.file_field :picture, accept: 'image/jpeg,image/jpg,image/png' %>
+    <%= f.file_field :picture, accept: 'image/jpeg,image/png', id: "pict" %>
   </span>
   <div class="field">
     <%= f.text_area :content, placeholder: "コメント" %>
   </div>
-  <%= f.submit "シェアする", class: "btn btn-primary", disabled: false%>
-<% end %>
+    <%= f.submit "シェアする", class: "btn btn-primary",id: "share_button"%>
+  <% end %>
 
+  <!--選択したファイルのサイズチェック  -->
   <script type="text/javascript">
-    $('#micropost_pitcture').bind('change'), function() {
+    $('#pict').on('change', function() {
       var size_in_megabytes = this.files[0].size/1024/1024;
       if (size_in_megabytes > 5) {
         alert("ファイルの最大容量は5MB未満です。画像を選択し直してください");
       }
     });
   </script>
+
+  <!-- ファイルが選択されていないと投稿できない仕組み -->
+  <script type="text/javascript">
+    $('#share_button').prop('disabled', true);
+    $('#pict').on('change', function() {
+      var file = this.files[0];
+      if (file != null) {
+        $('#share_button').prop('disabled', false);
+      }
+    });
+  </script>
+
+  <!-- 二重送信防止 -->
+  <script type="text/javascript">
+    $('form').submit(function(){
+      var self = this;
+      $(":submit", self).prop("disabled", true);
+      setTimeout(function() {
+        $(":submit", self).prop("disabled", false);
+      }, 10000);
+    });
+  </script>
+

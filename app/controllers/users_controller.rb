@@ -45,9 +45,8 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     if @user.update_attributes(user_params)
-      flahs[:success] = "プロフィールが変更されました"
-      rediretct_to @user
-      #更新に成功した場合を扱う
+      flash[:success] = "プロフィールが変更されました"
+      redirect_to @user
     else
       render 'edit'
     end
@@ -78,7 +77,7 @@ class UsersController < ApplicationController
   private 
     def user_params
       params.require(:user).permit(:name, :email, :password,
-                                   :password_confirmation)
+                                   :password_confirmation, :introduce)
     end
 
     #ログイン済みユーザーかどうか確認

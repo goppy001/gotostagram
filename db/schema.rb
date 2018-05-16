@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_05_15_020255) do
+ActiveRecord::Schema.define(version: 2018_05_15_052815) do
 
   create_table "favorites", force: :cascade do |t|
     t.integer "user_id", null: false
@@ -51,6 +51,7 @@ ActiveRecord::Schema.define(version: 2018_05_15_020255) do
     t.string "password_digest"
     t.string "remember_digest"
     t.boolean "admin", default: false
+    t.text "introduce"
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
