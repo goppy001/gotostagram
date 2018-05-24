@@ -7,6 +7,7 @@ class Micropost < ApplicationRecord
   validate :picture_size
   has_many :favorites, dependent: :destroy
   has_many :favorite_users, through: :favorites, source: :user
+  has_many :comments, dependent: :destroy
 
  #マイクロポストをいいねする
   def favorite(user)
@@ -22,8 +23,6 @@ class Micropost < ApplicationRecord
   def favorite?(user)
     favorite_users.include?(user)
   end
-
-
 
   private
 

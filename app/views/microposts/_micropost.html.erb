@@ -5,53 +5,46 @@
       <span class="user">
         <%= link_to micropost.user.name, micropost.user %>
       </span>
-    </div>
+    </div><!-- .user_profile -->
     <div class="picture">
       <%= image_tag micropost.picture.url if micropost.picture? %>
-    </div>
+    </div><!-- .picture -->
     <div class="favorite">
       <%= render 'favorites/favorite', micropost: micropost%>
-    </div>
+    </div><!-- .favorite-->
     <div class="favorite_count">
       <%= render 'favorites/favorite_count', micropost: micropost %>
-    </div>
+    </div><!--.favorite_count-->
+
     <div class="content">
       <input id="trigger1" class="grad_trigger" type="checkbox">
       <label class="grad_btn" for="trigger1">続きを読む</label>
-      <%= link_to "#{micropost.user.name}", micropost.user, class: "cmntname"%>      <span class="cmnt">
+      <%= link_to "#{micropost.user.name}", micropost.user, class: "cmntname"%> 
+      <span class="cmnt">
         <%= micropost.content %>
-      </span>
-    </div>
+      </span><!--.cmnt-->
+    </div><!--.content-->
+
+    <div class="comment">
+      <div class="comment_area" id="comment_area">
+        <%= render 'comments/index', comments: micropost.comments %>
+        </div>
+    </div><!--.comment-->
+
     <div class="time_delete">
       <div class="timestamp">
         <%= time_ago_in_words(micropost.created_at) %>前
-      </div>
+      </div><!--.timestamp-->
       <div class="delete_link">
         <% if current_user?(micropost.user) %>
           <%= link_to "削除", micropost, method: :delete,
             data: { confirm: "削除しますか?" }, class: "delete_link" %>
         <% end %>
-      </div>
-    </div>
+      </div><!--.delete_link-->
+    </div><!--.time_delete-->
+    <div class="comment_form">
+      <%= render 'comments/form', comment: @comment, micropost: micropost%>
+    </div><!--.comment_form-->
   </li>
 </div>
-
-
-  <script type="text/javascript">
-    var itemHeight = [];
-    $(function() {
-      $('.cmnt').each(function() {
-        var thisHeight = $(this).height();
-        itemsHeights.push(thisHeight);
-        $(this).addClass("is-hide");
-      });
-    });
-
-    $('#readmore').click(function() {
-      var index = $(this).index('#readmore');
-      var addHeight = itemHeights[index];
-      $(this).addClass('is-show').next().animate({height: addHeight},200).removeClass('is-hide');
-    });
-  </script>
-
 

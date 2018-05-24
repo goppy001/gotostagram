@@ -17,6 +17,8 @@
 //= require jquery.infinitescroll
 //= require activestorage
 //= require_tree .
+//= require jquery-ui
+//= require tag-it
 //= require bootstrap-sprockets
 //= require bootstrap
 //= require turbolinks

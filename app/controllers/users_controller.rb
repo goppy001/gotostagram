@@ -6,8 +6,11 @@ class UsersController < ApplicationController
 
   def index
     if logged_in?
+      @micropost = current_user.microposts.build
       @microposts = current_user.microposts.page(params[:page])
       @feed_items = current_user.feed.page(params[:page])
+      @comment = Comment.new
+      @comments = @micropost.comments
     else
       redirect_to login_url
     end
@@ -15,8 +18,11 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @micropost = @user.microposts.build
     @microposts = @user.microposts.page(params[:page])
     @feed_items = current_user.feed.page(params[:page])
+    @comment = Comment.new
+    @comments = @micropost.comments
   end
 
   def new
