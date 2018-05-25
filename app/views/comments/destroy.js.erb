@@ -1,2 +1,2 @@
-$(".comment_area").html("<%= j(render 'index', { comments: @comment.micropost.comments }) %>");
+$("#micropost-<%= @micropost.id %> .comment_area").html("<%=j(render 'index', {comments: @comment.micropost.comments} ) %>");
 $("textarea").val('');

@@ -12,9 +12,12 @@ class CommentsController < ApplicationController
   end
 
   def destroy
-    @comment = Comment.find(params[:id])
-    if @comment.destroy
-     render :destroy
+    @micropost = Comment.find(params[:id]).micropost
+    @comment   = Comment.find(params[:id])
+    @comment.destroy
+    respond_to do |format|
+      format.html {redirect_to micropost_path}
+      format.js
     end
   end
 
