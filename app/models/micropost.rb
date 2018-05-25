@@ -8,6 +8,8 @@ class Micropost < ApplicationRecord
   has_many :favorites, dependent: :destroy
   has_many :favorite_users, through: :favorites, source: :user
   has_many :comments, dependent: :destroy
+  has_many :hashtags, through: :micropost_hashtags
+  has_many :micropost_hashtags, dependent: :destroy
 
  #マイクロポストをいいねする
   def favorite(user)
@@ -24,7 +26,7 @@ class Micropost < ApplicationRecord
     favorite_users.include?(user)
   end
 
-  private
+    private
 
   #アップロードされた画像のサイズをバリデーションする
   def picture_size
