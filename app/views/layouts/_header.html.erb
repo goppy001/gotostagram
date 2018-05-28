@@ -2,7 +2,7 @@
   <div class="container">
      <%= link_to "Gotostagram", root_path, id: "logo" %>
     <form class="form-inline" >
-      <input class="form-control" type="search" placeholder="検索..." aria-label="検索...">
+      <input class="form-control" type="search" placeholder="【未実装】検索..." aria-label="検索...">
     </form>
       <ul style="list-style:none;">
         <% if logged_in? %>
@@ -12,6 +12,10 @@
           </li>
           <li><%= link_to current_user do %>
             <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+          <% end %>
+          </li>
+          <li><%= link_to list_path do %>
+            <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
           <% end %>
           </li>
         <% else %>
