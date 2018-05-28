@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ I've made first repository like instagram with RailsTutorial in company training.
 
-Things you may want to cover:
+ original function  
+ ・like/unlike and that counter  
+ ・picture post form  
+   -> without this, you can't post it.  
+ ・commentform with ajax  
 
-* Ruby version
+Now adding  
+・hashtag  
 
-* System dependencies
+Top image borrowed from instagram, so I can change it immidiately if there is a progblem in the use of this of copyrights.  
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
