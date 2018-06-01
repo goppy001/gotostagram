@@ -1,0 +1,84 @@
+/home/glodia/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/app_loader.rb:53: warning: Insecure world writable dir /home in PATH, mode 040777
+=> Booting Puma
+=> Rails 5.2.0 application starting in development 
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.11.4 (ruby 2.5.0-p0), codename: Love Song
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://0.0.0.0:3000
+Use Ctrl-C to stop
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2018-06-01 17:46:09 +0900 ===
+- Goodbye!
+Exiting
+/home/glodia/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/app_loader.rb:53: warning: Insecure world writable dir /home in PATH, mode 040777
+=> Booting Puma
+=> Rails 5.2.0 application starting in development 
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.11.4 (ruby 2.5.0-p0), codename: Love Song
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://0.0.0.0:3000
+Use Ctrl-C to stop
+Started GET "/" for 172.16.16.15 at 2018-06-01 17:46:57 +0900
+Cannot render console from 172.16.16.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ vendor/bundle/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+Redirected to http://172.16.50.152:3000/login
+Completed 302 Found in 12ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 172.16.16.15 at 2018-06-01 17:46:57 +0900
+Cannot render console from 172.16.16.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered sessions/new.html.erb (499.3ms)
+Completed 200 OK in 501ms (Views: 500.6ms | ActiveRecord: 0.0ms)
+
+
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2018-06-01 17:47:02 +0900 ===
+- Goodbye!
+Exiting
+/home/glodia/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.0/lib/rails/app_loader.rb:53: warning: Insecure world writable dir /home in PATH, mode 040777
+=> Booting Puma
+=> Rails 5.2.0 application starting in development 
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.11.4 (ruby 2.5.0-p0), codename: Love Song
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://0.0.0.0:3000
+Use Ctrl-C to stop
+Started GET "/" for 172.16.16.15 at 2018-06-01 17:48:33 +0900
+Cannot render console from 172.16.16.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ vendor/bundle/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+Redirected to http://172.16.50.152:3000/login
+Completed 302 Found in 12ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 172.16.16.15 at 2018-06-01 17:48:33 +0900
+Cannot render console from 172.16.16.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+  Rendered sessions/new.html.erb (497.8ms)
+Completed 200 OK in 499ms (Views: 499.0ms | ActiveRecord: 0.0ms)
+
+
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2018-06-01 17:48:35 +0900 ===
+- Goodbye!
+Exiting
