@@ -14,8 +14,8 @@ class CommentsController < ApplicationController
   def destroy
     @micropost = Comment.find(params[:id]).micropost
     @comment   = Comment.find(params[:id])
-    @comment.destroy
-    render :destroy
+    if @comment.destroy
+      render :destroy
     end
   end
 
