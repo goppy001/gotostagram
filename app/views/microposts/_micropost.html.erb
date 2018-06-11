@@ -21,7 +21,7 @@
       <label class="grad_btn" for="trigger1">続きを読む</label>
       <%= link_to "#{micropost.user.name}", micropost.user, class: "cmntname"%> 
       <span class="cmnt">
-        <%= micropost.content %>
+        <%= render_with_hashtags(micropost.content) %>
       </span><!--.cmnt-->
     </div><!--.content-->
 

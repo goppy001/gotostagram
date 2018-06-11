@@ -185,7 +185,7 @@ footer {
 
 aside {
   section.user_info {
-    margin-top: 20px;
+    margin-top:20px;
   }
   section {
     padding: 10px 0;
@@ -626,4 +626,83 @@ input {
 
 .namefield {
   font-size:auto;
+}
+
+/*ハッシュタグ*/
+.block1_hash {
+  margin-left:150px;
+  height:auto;
+   .block2_hash {
+     height:auto;
+     margin-left:200px;
+     margin-top:-80px;
+     .name_hash {
+       margin-left:2em;
+       float:left;
+       font-size:30px;
+       height:30px;
+      }
+     .edit_hash {
+       float:left;
+       font-size:15px;
+       margin-left:2.0em;
+       margin-top:0.3em;
+       height:30px;
+       &:hover {
+          text-decoration: none;
+        }
+      }
+      .glyphicon-cog {
+        font-size:25px;
+        float:left;
+        margin-left:0.5em;
+        margin-top:0.3em;
+        height:30px;
+        color:#000000;
+        &:hover {
+          color:#999999;
+        }
+      }
+      .fllw_hash {
+       clear:both;
+       position:relative;
+       top:20px;
+       left:3em;
+       color: black;
+       font-size:18px;
+       a {
+         color:black;
+         &:hover {
+           text-decoration: none;
+           color: blue;
+         }
+       }
+      } 
+      .introduce_hash {
+        height:50px;
+        position:relative;
+        top:-20px;
+        left:3em;
+        font-size:15px;
+      }
+    }
+  }
+
+.picture_hash {
+    background-color:#ffffff;
+    display:flex;
+    align-items:top;
+    border-top:solid 1px #EFEFEF;
+    border-left:solid 1px #EFEFEF;
+    border-right:solid 1px #EFEFEF;
+    height:614px;
+    width:614px;
+  }
+
+.posted_content {
+  margin-top:50px;
+  margin-left:380px;
+  li {
+    padding:0px 0;
+  }
 }

@@ -8,8 +8,7 @@ class Micropost < ApplicationRecord
   has_many :favorites, dependent: :destroy
   has_many :favorite_users, through: :favorites, source: :user
   has_many :comments, dependent: :destroy
-  has_many :hashtags, through: :micropost_hashtags
-  has_many :micropost_hashtags, dependent: :destroy
+  has_and_belongs_to_many :hashtags
 
  #マイクロポストをいいねする
   def favorite(user)
@@ -25,6 +24,26 @@ class Micropost < ApplicationRecord
   def favorite?(user)
     favorite_users.include?(user)
   end
+
+  after_create do
+    micropost = Micropost.find_by(id: self.id)
+    hashtags  = self.content.scan(/[#＃][\w\p{Han}ぁ-ヶｦ-ﾟー]+/)
+    hashtags.uniq.map do |hashtag|
+      tag = Hashtag.find_or_create_by(hashname: hashtag.downcase.delete('#'))
+      micropost.hashtags << tag
+    end
+  end
+
+  before_update do 
+    micropost = Micropost.find_by(id: self.id)
+    micropost.hashtags.clear
+    hashtags = self.content.scan(/[#＃][\w\p{Han}ぁ-ヶｦ-ﾟー]+/)
+    hashtags.uniq.map do |hashtag|
+      tag = Hashtag.find_or_create_by(hashname: hashtag.downcase.delete('#'))
+      micropost.hashtags << tag
+    end
+  end
+
 
     private
 

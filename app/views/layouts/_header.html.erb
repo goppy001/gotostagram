@@ -6,19 +6,21 @@
     </form>
       <ul style="list-style:none;">
         <% if logged_in? %>
-          <li><%= link_to post_path do %>
-            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-          <% end %>
+          <li>
+            <%= link_to post_path do %>
+              <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+            <% end %>
           </li>
-          <li><%= link_to current_user do %>
-            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-          <% end %>
+          <li>
+            <%= link_to current_user do %>
+              <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+            <% end %>
           </li>
-          <li><%= link_to list_path do %>
-            <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
-          <% end %>
+          <li>
+            <%= link_to list_path do %>
+              <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+            <% end %>
           </li>
-        <% else %>
         <% end %>
       </ul>
     </div>

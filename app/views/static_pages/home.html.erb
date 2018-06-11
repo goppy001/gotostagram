@@ -1,21 +1,19 @@
 <% if logged_in? %>
-<div class="row">
-  <div class="col-md-8">
-    <div class="feed_top" id="feed_top">
-      <%= render 'microposts/feed' %>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="feed_top" id="feed_top">
+        <%= render 'microposts/feed' %>
+      </div>
     </div>
-  </div>
 
-  <div class="col-md-4">
-    <div class="user_top">
-      <%= render 'shared/user_info_top' %>
+    <div class="col-md-4">
+      <div class="user_top">
+        <%= render 'shared/user_info_top' %>
+      </div>
     </div>
   </div>
 
 <% else %>
   <% render login_url %>
 <% end %>
-
-</div>
-
 

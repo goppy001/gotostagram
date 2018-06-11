@@ -1,5 +1,4 @@
 class Hashtag < ApplicationRecord
   validates :hashname, presence: true, length: {maximum:99}
-  has_many  :microposts, through: :micropost_hashtags
-  has_many  :micropost_hashtags, dependent: :destroy
+  has_and_belongs_to_many :microposts
 end

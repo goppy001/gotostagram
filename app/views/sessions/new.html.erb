@@ -9,38 +9,39 @@
   </head>
   <body>
     <div class="login_all">
-    <div class="container">
-      <div class="col-md-1 col-md-offset-2">
+      <div class="container">
+        <div class="col-md-1 col-md-offset-2">
           <%= image_tag("top_image.jpg", alt:"top_image") %>
-    </div>
-    <div class="col-md-3 col-md-offset-4" id="top_logo">Gotostagram</div>
-      <div class="col-md-3 col-md-offset-4">
-        <%= form_for(:session, url: login_path) do |f| %>
-        <div class="row">
-        
-          <%= f.email_field :email, class: 'form-control_login', :placeholder => " メールアドレス" %>
-          <p>
-          </p>
-          <%= f.password_field :password, class: 'form-control_login',:placeholder => " パスワード" %>
-
-        <%= f.label :remember_me, class: "checkbox inline" do %>
-           <%= f.check_box :remember_me %>
-           <span>ログイン情報を保持する</span>
-         <% end %>
-      <p>
-      </p>
-      <p>
-      </p>
-      <%= f.submit "ログインする", class: "btn btn-primary" %>
-    <% end %>
-
-    <div class="signup_message">
-      <p>アカウントをお持ちでないですか？  <%= link_to "登録する", signup_path %></p>
-    </div>
-     </div>
+        </div>
+        <div class="col-md-3 col-md-offset-4" id="top_logo">
+          Gotostagram
+        </div>
+        <div class="col-md-3 col-md-offset-4">
+          <%= form_for(:session, url: login_path) do |f| %>
+            <div class="row">
+              <%= f.email_field :email, class: 'form-control_login', :placeholder => " メールアドレス" %>
+              <p>
+              </p>
+              <%= f.password_field :password, class: 'form-control_login',:placeholder => " パスワード" %>
+              <%= f.label :remember_me, class: "checkbox inline" do %>
+                <%= f.check_box :remember_me %>
+                <span>
+                  ログイン情報を保持する
+                </span>
+              <% end %>
+              <p>
+              </p>
+              <p>
+              </p>
+              <%= f.submit "ログインする", class: "btn btn-primary" %>
+            </div>
+          <% end %>
+          <div class="signup_message">
+            <p>アカウントをお持ちでないですか？  <%= link_to "登録する", signup_path %></p>
+          </div>
+        </div>
+        <%= render 'layouts/footer' %>
       </div>
-      <%= render 'layouts/footer' %>
-    </div>
     </div>
   </body>
 </html>
