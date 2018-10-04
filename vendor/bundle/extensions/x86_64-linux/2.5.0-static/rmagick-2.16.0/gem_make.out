@@ -1,5 +1,5 @@
 current directory: /home/glodia/gotostagram/vendor/bundle/gems/rmagick-2.16.0/ext/RMagick
-/home/glodia/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20180510-14443-cpee94.rb extconf.rb
+/home/glodia/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20181004-14286-z4cmj6.rb extconf.rb
 checking for gcc... yes
 checking for Magick-config... yes
 checking for outdated ImageMagick version (<= 6.4.9)... no
@@ -129,7 +129,7 @@ creating Makefile
 
 
 ======================================================================
-Thu 10May18 15:59:42
+Thu 04Oct18 16:13:56
 This installation of RMagick 2.16.0 is configured for
 Ruby 2.5.0 (x86_64-linux) and ImageMagick 6.7.8
 ======================================================================
@@ -172,4 +172,4 @@ linking shared-object RMagick2.so
 
 current directory: /home/glodia/gotostagram/vendor/bundle/gems/rmagick-2.16.0/ext/RMagick
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 RMagick2.so ./.gem.20180510-14443-117c7x2
+/usr/bin/install -c -m 0755 RMagick2.so ./.gem.20181004-14286-jj2zzp

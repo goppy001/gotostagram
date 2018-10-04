@@ -1,5 +1,5 @@
 current directory: /home/glodia/gotostagram/vendor/bundle/gems/unf_ext-0.0.7.5/ext/unf_ext
-/home/glodia/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20180508-22740-gf96jq.rb extconf.rb
+/home/glodia/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20181004-14286-162bds5.rb extconf.rb
 checking for -lstdc++... yes
 creating Makefile
 
@@ -20,4 +20,4 @@ linking shared-object unf_ext.so
 
 current directory: /home/glodia/gotostagram/vendor/bundle/gems/unf_ext-0.0.7.5/ext/unf_ext
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 unf_ext.so ./.gem.20180508-22740-17bk8hy
+/usr/bin/install -c -m 0755 unf_ext.so ./.gem.20181004-14286-4oampu

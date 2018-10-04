@@ -1,6 +1,6 @@
 find_executable: checking for gcc... -------------------- yes
 
-/home/glodia/.rbenv/versions/2.5.0/lib/ruby/2.5.0/mkmf.rb:1553: warning: Insecure world writable dir /home in PATH, mode 040777
+/home/glodia/.rbenv/versions/2.5.0/lib/ruby/2.5.0/mkmf.rb:1553: warning: Insecure world writable dir /home/glodia/.rbenv/versions/2.5.0 in PATH, mode 040777
 --------------------
 
 find_executable: checking for Magick-config... -------------------- yes
@@ -1107,7 +1107,7 @@ checked program was:
 /* end */
 
 "gcc -o conftest -I/home/glodia/.rbenv/versions/2.5.0/include/ruby-2.5.0/x86_64-linux -I/home/glodia/.rbenv/versions/2.5.0/include/ruby-2.5.0/ruby/backward -I/home/glodia/.rbenv/versions/2.5.0/include/ruby-2.5.0 -I.  -fopenmp -I/usr/include/ImageMagick    -fopenmp -I/usr/include/ImageMagick   conftest.c  -L. -L/home/glodia/.rbenv/versions/2.5.0/lib -Wl,-rpath,/home/glodia/.rbenv/versions/2.5.0/lib  -lMagickCore      -lMagickCore    -Wl,-rpath,/home/glodia/.rbenv/versions/2.5.0/lib -L/home/glodia/.rbenv/versions/2.5.0/lib -lruby-static  -lpthread -ldl -lcrypt -lm   -lc"
-/tmp/cc3Xbjp5.o: 関数 `t' 内:
+/tmp/cc09BtS4.o: 関数 `t' 内:
 conftest.c:(.text+0x3d): `RotationalBlurImage' に対する定義されていない参照です
 collect2: エラー: ld はステータス 1 で終了しました
 checked program was:
@@ -1176,7 +1176,7 @@ checked program was:
 /* end */
 
 "gcc -o conftest -I/home/glodia/.rbenv/versions/2.5.0/include/ruby-2.5.0/x86_64-linux -I/home/glodia/.rbenv/versions/2.5.0/include/ruby-2.5.0/ruby/backward -I/home/glodia/.rbenv/versions/2.5.0/include/ruby-2.5.0 -I.  -fopenmp -I/usr/include/ImageMagick    -fopenmp -I/usr/include/ImageMagick   conftest.c  -L. -L/home/glodia/.rbenv/versions/2.5.0/lib -Wl,-rpath,/home/glodia/.rbenv/versions/2.5.0/lib  -lMagickCore      -lMagickCore    -Wl,-rpath,/home/glodia/.rbenv/versions/2.5.0/lib -L/home/glodia/.rbenv/versions/2.5.0/lib -lruby-static  -lpthread -ldl -lcrypt -lm   -lc"
-/tmp/ccdQzP7d.o: 関数 `t' 内:
+/tmp/ccxxijNi.o: 関数 `t' 内:
 conftest.c:(.text+0x3d): `RotationalBlurImageChannel' に対する定義されていない参照です
 collect2: エラー: ld はステータス 1 で終了しました
 checked program was:
@@ -3486,7 +3486,7 @@ extconf.h is:
 
 
 ======================================================================
-Thu 10May18 15:59:42
+Thu 04Oct18 16:13:56
 This installation of RMagick 2.16.0 is configured for
 Ruby 2.5.0 (x86_64-linux) and ImageMagick 6.7.8
 ======================================================================

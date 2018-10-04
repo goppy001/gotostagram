@@ -1,5 +1,5 @@
-current directory: /home/share/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ext/nokogiri
-/home/glodia/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20180416-22279-14ku63f.rb extconf.rb
+current directory: /home/glodia/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ext/nokogiri
+/home/glodia/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20181004-14286-1v53pjp.rb extconf.rb
 checking if the C compiler accepts ... yes
 Building nokogiri using packaged libraries.
 Using mini_portile version 2.3.0
@@ -31,7 +31,7 @@ Extracting libxml2-2.9.7.tar.gz into tmp/x86_64-pc-linux-gnu/ports/libxml2/2.9.7
 Running 'configure' for libxml2 2.9.7... OK
 Running 'compile' for libxml2 2.9.7... OK
 Running 'install' for libxml2 2.9.7... OK
-Activating libxml2 2.9.7 (from /home/share/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxml2/2.9.7)...
+Activating libxml2 2.9.7 (from /home/glodia/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxml2/2.9.7)...
 ************************************************************************
 IMPORTANT NOTICE:
 
@@ -55,8 +55,8 @@ Extracting libxslt-1.1.32.tar.gz into tmp/x86_64-pc-linux-gnu/ports/libxslt/1.1.
 Running 'configure' for libxslt 1.1.32... OK
 Running 'compile' for libxslt 1.1.32... OK
 Running 'install' for libxslt 1.1.32... OK
-Activating libxslt 1.1.32 (from /home/share/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxslt/1.1.32)...
-checking for -llzma... no
+Activating libxslt 1.1.32 (from /home/glodia/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxslt/1.1.32)...
+checking for -llzma... yes
 checking for xmlParseDoc() in libxml/parser.h... yes
 checking for xsltParseStylesheetDoc() in libxslt/xslt.h... yes
 checking for exsltFuncRegister() in libexslt/exslt.h... yes
@@ -69,10 +69,10 @@ checking for xmlSchemaSetValidStructuredErrors()... yes
 checking for xmlSchemaSetParserStructuredErrors()... yes
 creating Makefile
 
-current directory: /home/share/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ext/nokogiri
+current directory: /home/glodia/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ext/nokogiri
 make "DESTDIR=" clean
 
-current directory: /home/share/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ext/nokogiri
+current directory: /home/glodia/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ext/nokogiri
 make "DESTDIR="
 compiling html_document.c
 compiling html_element_description.c
@@ -289,9 +289,9 @@ cc1: 警告: 認識できないコマンドラインオプション "-Wno-parent
 cc1: 警告: 認識できないコマンドラインオプション "-Wno-tautological-compare" です [デフォルトで有効]
 linking shared-object nokogiri/nokogiri.so
 Cleaning files only used during build.
-rm -rf /home/share/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ext/nokogiri/tmp/x86_64-pc-linux-gnu/ports
-rm -rf /home/share/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports
+rm -rf /home/glodia/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ext/nokogiri/tmp/x86_64-pc-linux-gnu/ports
+rm -rf /home/glodia/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports
 
-current directory: /home/share/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ext/nokogiri
+current directory: /home/glodia/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ext/nokogiri
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 nokogiri.so ./.gem.20180416-22279-1dc3ixy/nokogiri
+/usr/bin/install -c -m 0755 nokogiri.so ./.gem.20181004-14286-1fcok97/nokogiri

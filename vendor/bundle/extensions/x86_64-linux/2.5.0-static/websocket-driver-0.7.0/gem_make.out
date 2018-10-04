@@ -1,15 +1,15 @@
-current directory: /home/share/gotostagram/vendor/bundle/gems/websocket-driver-0.7.0/ext/websocket-driver
-/home/glodia/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20180416-22279-zhsu3i.rb extconf.rb
+current directory: /home/glodia/gotostagram/vendor/bundle/gems/websocket-driver-0.7.0/ext/websocket-driver
+/home/glodia/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20181004-14286-1ge7xwt.rb extconf.rb
 creating Makefile
 
-current directory: /home/share/gotostagram/vendor/bundle/gems/websocket-driver-0.7.0/ext/websocket-driver
+current directory: /home/glodia/gotostagram/vendor/bundle/gems/websocket-driver-0.7.0/ext/websocket-driver
 make "DESTDIR=" clean
 
-current directory: /home/share/gotostagram/vendor/bundle/gems/websocket-driver-0.7.0/ext/websocket-driver
+current directory: /home/glodia/gotostagram/vendor/bundle/gems/websocket-driver-0.7.0/ext/websocket-driver
 make "DESTDIR="
 compiling websocket_mask.c
 linking shared-object websocket_mask.so
 
-current directory: /home/share/gotostagram/vendor/bundle/gems/websocket-driver-0.7.0/ext/websocket-driver
+current directory: /home/glodia/gotostagram/vendor/bundle/gems/websocket-driver-0.7.0/ext/websocket-driver
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20180416-22279-emcsbc
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20181004-14286-w17vua

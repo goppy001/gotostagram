@@ -1,11 +1,11 @@
-current directory: /home/share/gotostagram/vendor/bundle/gems/bootsnap-1.3.0/ext/bootsnap
-/home/glodia/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20180416-22279-1gacvn2.rb extconf.rb
+current directory: /home/glodia/gotostagram/vendor/bundle/gems/bootsnap-1.3.0/ext/bootsnap
+/home/glodia/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20181004-14286-a4ewd7.rb extconf.rb
 creating Makefile
 
-current directory: /home/share/gotostagram/vendor/bundle/gems/bootsnap-1.3.0/ext/bootsnap
+current directory: /home/glodia/gotostagram/vendor/bundle/gems/bootsnap-1.3.0/ext/bootsnap
 make "DESTDIR=" clean
 
-current directory: /home/share/gotostagram/vendor/bundle/gems/bootsnap-1.3.0/ext/bootsnap
+current directory: /home/glodia/gotostagram/vendor/bundle/gems/bootsnap-1.3.0/ext/bootsnap
 make "DESTDIR="
 compiling bootsnap.c
 bootsnap.c: 関数 ‘get_ruby_platform’ 内:
@@ -33,8 +33,8 @@ cc1: 警告: 認識できないコマンドラインオプション "-Wno-parent
 cc1: 警告: 認識できないコマンドラインオプション "-Wno-tautological-compare" です [デフォルトで有効]
 linking shared-object bootsnap/bootsnap.so
 bootsnap.o: 関数 `atomic_write_cache_file' 内:
-/home/share/gotostagram/vendor/bundle/gems/bootsnap-1.3.0/ext/bootsnap/bootsnap.c:477: 警告: the use of `mktemp' is dangerous, better use `mkstemp'
+/home/glodia/gotostagram/vendor/bundle/gems/bootsnap-1.3.0/ext/bootsnap/bootsnap.c:477: 警告: the use of `mktemp' is dangerous, better use `mkstemp'
 
-current directory: /home/share/gotostagram/vendor/bundle/gems/bootsnap-1.3.0/ext/bootsnap
+current directory: /home/glodia/gotostagram/vendor/bundle/gems/bootsnap-1.3.0/ext/bootsnap
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20180416-22279-16lm7qx/bootsnap
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20181004-14286-20eoah/bootsnap

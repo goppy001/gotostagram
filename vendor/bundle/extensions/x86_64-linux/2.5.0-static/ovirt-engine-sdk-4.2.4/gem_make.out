@@ -1,5 +1,5 @@
 current directory: /home/glodia/gotostagram/vendor/bundle/gems/ovirt-engine-sdk-4.2.4/ext/ovirtsdk4c
-/home/glodia/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20180508-24774-jvpgay.rb extconf.rb
+/home/glodia/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20181004-14286-1unx4fa.rb extconf.rb
 checking for xml2-config... yes
 checking for curl-config... yes
 creating Makefile
@@ -50,4 +50,4 @@ linking shared-object ovirtsdk4c.so
 
 current directory: /home/glodia/gotostagram/vendor/bundle/gems/ovirt-engine-sdk-4.2.4/ext/ovirtsdk4c
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 ovirtsdk4c.so ./.gem.20180508-24774-qtudhj
+/usr/bin/install -c -m 0755 ovirtsdk4c.so ./.gem.20181004-14286-mept0n

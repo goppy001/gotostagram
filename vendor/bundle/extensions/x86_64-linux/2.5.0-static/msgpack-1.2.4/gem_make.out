@@ -1,5 +1,5 @@
-current directory: /home/share/gotostagram/vendor/bundle/gems/msgpack-1.2.4/ext/msgpack
-/home/glodia/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20180416-22279-5hfcth.rb extconf.rb
+current directory: /home/glodia/gotostagram/vendor/bundle/gems/msgpack-1.2.4/ext/msgpack
+/home/glodia/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20181004-14286-1lt53yt.rb extconf.rb
 checking for ruby/st.h... yes
 checking for st.h... yes
 checking for rb_str_replace() in ruby.h... yes
@@ -11,10 +11,10 @@ checking for rb_hash_dup() in ruby.h... yes
 checking for rb_hash_clear() in ruby.h... yes
 creating Makefile
 
-current directory: /home/share/gotostagram/vendor/bundle/gems/msgpack-1.2.4/ext/msgpack
+current directory: /home/glodia/gotostagram/vendor/bundle/gems/msgpack-1.2.4/ext/msgpack
 make "DESTDIR=" clean
 
-current directory: /home/share/gotostagram/vendor/bundle/gems/msgpack-1.2.4/ext/msgpack
+current directory: /home/glodia/gotostagram/vendor/bundle/gems/msgpack-1.2.4/ext/msgpack
 make "DESTDIR="
 compiling buffer.c
 compiling buffer_class.c
@@ -59,6 +59,6 @@ cc1: 警告: 認識できないコマンドラインオプション "-Wno-tautol
 compiling unpacker_ext_registry.c
 linking shared-object msgpack/msgpack.so
 
-current directory: /home/share/gotostagram/vendor/bundle/gems/msgpack-1.2.4/ext/msgpack
+current directory: /home/glodia/gotostagram/vendor/bundle/gems/msgpack-1.2.4/ext/msgpack
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 msgpack.so ./.gem.20180416-22279-1lbvtux/msgpack
+/usr/bin/install -c -m 0755 msgpack.so ./.gem.20181004-14286-16hj4y6/msgpack

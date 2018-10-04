@@ -1,5 +1,5 @@
 current directory: /home/glodia/gotostagram/vendor/bundle/gems/bcrypt-3.1.11/ext/mri
-/home/glodia/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20180425-23505-1ll4dc7.rb extconf.rb
+/home/glodia/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20181004-14286-1m4p4dp.rb extconf.rb
 creating Makefile
 
 current directory: /home/glodia/gotostagram/vendor/bundle/gems/bcrypt-3.1.11/ext/mri
@@ -16,4 +16,4 @@ linking shared-object bcrypt_ext.so
 
 current directory: /home/glodia/gotostagram/vendor/bundle/gems/bcrypt-3.1.11/ext/mri
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 bcrypt_ext.so ./.gem.20180425-23505-104rfbf
+/usr/bin/install -c -m 0755 bcrypt_ext.so ./.gem.20181004-14286-11734pm

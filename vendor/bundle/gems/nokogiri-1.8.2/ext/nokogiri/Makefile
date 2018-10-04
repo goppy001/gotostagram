@@ -31,8 +31,8 @@ rubyhdrdir = $(includedir)/$(RUBY_VERSION_NAME)
 vendorarchdir = $(vendorlibdir)/$(sitearch)
 vendorlibdir = $(vendordir)/$(ruby_version)
 vendordir = $(rubylibprefix)/vendor_ruby
-sitearchdir = $(DESTDIR)./.gem.20180416-22279-1dc3ixy
-sitelibdir = $(DESTDIR)./.gem.20180416-22279-1dc3ixy
+sitearchdir = $(DESTDIR)./.gem.20181004-14286-1fcok97
+sitelibdir = $(DESTDIR)./.gem.20181004-14286-1fcok97
 sitedir = $(rubylibprefix)/site_ruby
 rubyarchdir = $(rubylibdir)/$(arch)
 rubylibdir = $(rubylibprefix)/$(ruby_version)
@@ -84,7 +84,7 @@ CCDLFLAGS = -fPIC
 CFLAGS   = $(CCDLFLAGS) $(cflags)  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -DNOKOGIRI_USE_PACKAGED_LIBRARIES $(ARCH_FLAG)
 INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir)
 DEFS     = 
-CPPFLAGS = -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -I/home/share/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxslt/1.1.32/include -I/home/share/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxml2/2.9.7/include/libxml2 -I/home/share/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxml2/2.9.7/include/libxml2 -I/home/glodia/.rbenv/versions/2.5.0/include  $(DEFS) $(cppflags) "-DNOKOGIRI_LIBXML2_PATH=\"/home/share/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxml2/2.9.7\"" "-DNOKOGIRI_LIBXML2_PATCHES=\"\"" "-DNOKOGIRI_LIBXSLT_PATH=\"/home/share/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxslt/1.1.32\"" "-DNOKOGIRI_LIBXSLT_PATCHES=\"\""
+CPPFLAGS = -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -I/home/glodia/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxslt/1.1.32/include -I/home/glodia/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxml2/2.9.7/include/libxml2 -I/home/glodia/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxml2/2.9.7/include/libxml2 -I/home/glodia/.rbenv/versions/2.5.0/include  $(DEFS) $(cppflags) "-DNOKOGIRI_LIBXML2_PATH=\"/home/glodia/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxml2/2.9.7\"" "-DNOKOGIRI_LIBXML2_PATCHES=\"\"" "-DNOKOGIRI_LIBXSLT_PATH=\"/home/glodia/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxslt/1.1.32\"" "-DNOKOGIRI_LIBXSLT_PATCHES=\"\""
 CXXFLAGS = $(CCDLFLAGS) $(cxxflags) $(ARCH_FLAG)
 ldflags  = -L. -L/home/glodia/.rbenv/versions/2.5.0/lib  -fstack-protector -rdynamic -Wl,-export-dynamic
 dldflags = -L/home/glodia/.rbenv/versions/2.5.0/lib  
@@ -122,8 +122,8 @@ TOUCH = exit >
 #### End of system configuration section. ####
 
 preload = 
-libpath = . $(libdir) /home/share/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxml2/2.9.7/lib /home/share/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxslt/1.1.32/lib
-LIBPATH =  -L. -L$(libdir) -Wl,-rpath,$(libdir) -L/home/share/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxml2/2.9.7/lib -Wl,-rpath,/home/share/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxml2/2.9.7/lib -L/home/share/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxslt/1.1.32/lib -Wl,-rpath,/home/share/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxslt/1.1.32/lib
+libpath = . $(libdir) /home/glodia/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxml2/2.9.7/lib /home/glodia/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxslt/1.1.32/lib
+LIBPATH =  -L. -L$(libdir) -Wl,-rpath,$(libdir) -L/home/glodia/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxml2/2.9.7/lib -Wl,-rpath,/home/glodia/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxml2/2.9.7/lib -L/home/glodia/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxslt/1.1.32/lib -Wl,-rpath,/home/glodia/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxslt/1.1.32/lib
 DEFFILE = 
 
 CLEANFILES = mkmf.log
@@ -134,7 +134,7 @@ extout =
 extout_prefix = 
 target_prefix = /nokogiri
 LOCAL_LIBS = 
-LIBS =  /home/share/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxslt/1.1.32/lib/libexslt.a -lm -ldl -lz /home/share/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxml2/2.9.7/lib/libxml2.a /home/share/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxslt/1.1.32/lib/libxslt.a -ldl -lm -lz /home/share/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxml2/2.9.7/lib/libxml2.a -lpthread -ldl -lcrypt -lm   -lc 
+LIBS =  /home/glodia/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxslt/1.1.32/lib/libexslt.a -lm -ldl -llzma -lz /home/glodia/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxml2/2.9.7/lib/libxml2.a /home/glodia/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxslt/1.1.32/lib/libxslt.a -ldl -lm -llzma -lz /home/glodia/gotostagram/vendor/bundle/gems/nokogiri-1.8.2/ports/x86_64-pc-linux-gnu/libxml2/2.9.7/lib/libxml2.a -llzma -lpthread -ldl -lcrypt -lm   -lc 
 ORIG_SRCS = html_document.c html_element_description.c html_entity_lookup.c html_sax_parser_context.c html_sax_push_parser.c nokogiri.c xml_attr.c xml_attribute_decl.c xml_cdata.c xml_comment.c xml_document.c xml_document_fragment.c xml_dtd.c xml_element_content.c xml_element_decl.c xml_encoding_handler.c xml_entity_decl.c xml_entity_reference.c xml_io.c xml_libxml2_hacks.c xml_namespace.c xml_node.c xml_node_set.c xml_processing_instruction.c xml_reader.c xml_relax_ng.c xml_sax_parser.c xml_sax_parser_context.c xml_sax_push_parser.c xml_schema.c xml_syntax_error.c xml_text.c xml_xpath_context.c xslt_stylesheet.c
 SRCS = $(ORIG_SRCS) 
 OBJS = html_document.o html_element_description.o html_entity_lookup.o html_sax_parser_context.o html_sax_push_parser.o nokogiri.o xml_attr.o xml_attribute_decl.o xml_cdata.o xml_comment.o xml_document.o xml_document_fragment.o xml_dtd.o xml_element_content.o xml_element_decl.o xml_encoding_handler.o xml_entity_decl.o xml_entity_reference.o xml_io.o xml_libxml2_hacks.o xml_namespace.o xml_node.o xml_node_set.o xml_processing_instruction.o xml_reader.o xml_relax_ng.o xml_sax_parser.o xml_sax_parser_context.o xml_sax_push_parser.o xml_schema.o xml_syntax_error.o xml_text.o xml_xpath_context.o xslt_stylesheet.o

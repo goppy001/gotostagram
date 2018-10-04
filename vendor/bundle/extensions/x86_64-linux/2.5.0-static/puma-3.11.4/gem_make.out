@@ -1,14 +1,14 @@
-current directory: /home/share/gotostagram/vendor/bundle/gems/puma-3.11.4/ext/puma_http11
-/home/glodia/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20180416-22279-1yokgse.rb extconf.rb
+current directory: /home/glodia/gotostagram/vendor/bundle/gems/puma-3.11.4/ext/puma_http11
+/home/glodia/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20181004-14286-ihq8gg.rb extconf.rb
 checking for BIO_read() in -lcrypto... yes
 checking for SSL_CTX_new() in -lssl... yes
 checking for openssl/bio.h... yes
 creating Makefile
 
-current directory: /home/share/gotostagram/vendor/bundle/gems/puma-3.11.4/ext/puma_http11
+current directory: /home/glodia/gotostagram/vendor/bundle/gems/puma-3.11.4/ext/puma_http11
 make "DESTDIR=" clean
 
-current directory: /home/share/gotostagram/vendor/bundle/gems/puma-3.11.4/ext/puma_http11
+current directory: /home/glodia/gotostagram/vendor/bundle/gems/puma-3.11.4/ext/puma_http11
 make "DESTDIR="
 compiling http11_parser.c
 compiling io_buffer.c
@@ -38,6 +38,6 @@ cc1: 警告: 認識できないコマンドラインオプション "-Wno-tautol
 compiling puma_http11.c
 linking shared-object puma/puma_http11.so
 
-current directory: /home/share/gotostagram/vendor/bundle/gems/puma-3.11.4/ext/puma_http11
+current directory: /home/glodia/gotostagram/vendor/bundle/gems/puma-3.11.4/ext/puma_http11
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20180416-22279-186vp2n/puma
+/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20181004-14286-1x4t8ko/puma
